@@ -1,16 +1,16 @@
 [tool.poetry]
 name = "vectorfriend-neo4j-recommendations"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["jalakoo <jalakoo@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-neo4j = "^5.20.0"
-functions-framework = "^3.5.0"
+pydantic = {extras = ["email"], version = "^2.8.2"}
+neo4j-rust-ext = "^5.24.0.0"
+functions-framework = "^3.8.1"
 basicauth = "^1.0.0"
-openai = "^1.30.1"
 
 
 [build-system]
